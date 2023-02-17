@@ -1,0 +1,9 @@
+* {
+  margin: 0;
+}
+
+.App {
+  color: white;
+  background: repeating-radial-gradient(#060f00, #150011);
+  overflow: hidden;
+}
