@@ -1,0 +1,159 @@
+@keyframes auto-scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-20%);
+    }
+}
+
+
+.row__wrapper {
+    position: relative;
+}
+
+.row__sliderArrow {
+    width: 50px;
+    height: 50%;
+    background-color: #1616160b;
+    color: white;
+    position: absolute;
+    z-index: 99;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    cursor: pointer;
+}
+
+.row__wrapperLeft {
+    left: 0;
+}
+
+.row__wrapperRight {
+    right: 0;
+}
+
+.rowPosters {
+    display: flex;
+    padding: 20px;
+    padding-left: 1px;
+    /* transform: translateX(0px);
+    transition: all 1s ease; */
+}
+
+.rowPosters::-webkit-scrollbar {
+    display: none;
+}
+
+.auto__scroll {
+    animation: auto-scroll 60s linear infinite;
+}
+
+.auto__scroll:hover {
+    animation: auto-scroll 0s;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+
+.rowPoster {
+    object-fit: contain;
+    width: 100%;
+    max-height: 170px;
+    transition: transform 450ms;
+    border-bottom: 1px solid #ffc800;
+    box-shadow: 1px 2px 3px 0px #00acf5;
+    border-radius: 7px;
+}
+
+.rowPoster:hover {
+    transform: scale(1.05);
+}
+
+.rowPosterLarge {
+    max-height: 228px;
+}
+
+.rowPosterLarge:hover {
+    transform: scale(1.05);
+}
+
+.zIndex {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.row__title {
+    text-shadow: 3px 3px 6px #00b7ff;
+}
+
+.row__title:hover {
+    text-shadow: 3px 3px 6px #ff7300;
+}
+
+.rowPostersSlider {
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1;
+    transform: translate(-1%, -1%);
+    color: #fff;
+    cursor: pointer;
+    opacity: .01;
+}
+
+
+.rowPostersRightSlider {
+    left: 99%;
+}
+
+.rowPostersLeftSlider {
+    left: 1%;
+}
+
+@media (min-width: 576px) {
+    .rowPosterLarge {
+        max-height: 380px;
+    }
+}
+
+@media (min-width: 768px) {
+    .rowPosters {
+        padding-left: 17px;
+    }
+
+    .rowPosterLarge {
+        max-height: 340px;
+    }
+}
+
+@media (min-width: 992px) {
+    .rowPosters {
+        padding-left: 13px;
+    }
+
+    .rowPosterLarge {
+        max-height: 333px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .rowPosterLarge {
+        max-height: 359px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .rowPosterLarge {
+        max-height: 330px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .rowPosterLarge {
+        max-height: 327px;
+    }
+}

@@ -1,0 +1,141 @@
+.NetflixLogo img {
+    width: 100px;
+    object-fit: contain;
+}
+
+.NetflixIcon img {
+    width: 20px;
+    object-fit: contain;
+}
+
+.NetflixLogo {
+    padding-left: 21px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.bgNav {
+    background: repeating-radial-gradient(#060f00, #150011);
+}
+
+.netflixNav {
+    color: whitesmoke;
+    height: 70px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    z-index: 1;
+    transition-timing-function: ease-in;
+    transition: all 0.5s;
+}
+
+.homeNav {
+    font-size: 0;
+}
+
+.homeNav ul {
+    list-style: none;
+    gap: 12px;
+    display: flex;
+}
+
+.netflixNav li {
+    text-shadow: 2px 1px 0px #000;
+}
+
+.netflixNav li:hover {
+    scale: 1.07;
+    opacity: .9;
+    text-shadow: 2px 1px 0px #00b7ff;
+}
+
+.netflixNav i {
+    text-shadow: 2px 1px 0px #000;
+}
+
+.netflixNav i:hover {
+    scale: 1.07;
+    opacity: .9;
+    text-shadow: 2px 1px 0px #00b7ff;
+}
+
+.searchNav {
+    display: none;
+}
+
+.search {
+    font-size: 11px;
+}
+
+.bell {
+    font-size: 20px;
+    cursor: pointer !important;
+}
+
+.searchNav ul {
+    list-style: none;
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.badgeButton {
+    border: 0;
+}
+
+.badgeButton:hover {
+    scale: 1.1;
+    opacity: 1 !important;
+}
+
+.badgeButton i:hover {
+    scale: 1.1;
+    opacity: 1 !important;
+}
+
+
+@media (min-width: 768px) {
+    .homeNav {
+        font-size: 12px;
+    }
+
+    .dvd {
+        font-size: 9px;
+    }
+}
+
+@media (min-width: 820px) {
+    .searchNav {
+        display: block;
+    }
+}
+
+@media (min-width: 1200px) {
+    .homeNav {
+        font-size: 13px;
+        padding-left: 50px;
+        padding-right: 200px;
+    }
+
+    .dvd {
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .homeNav {
+        font-size: 15px;
+        padding-left: 50px;
+        padding-right: 200px;
+    }
+
+    .dvd {
+        font-size: 15px;
+    }
+}
