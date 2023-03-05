@@ -9,10 +9,7 @@
     "axios": "^1.2.3",
     "bootstrap": "^5.3.0-alpha1",
     "bootstrap-icons": "^1.10.3",
-<<<<<<< HEAD
-=======
     "firebase": "^9.17.1",
->>>>>>> a714a31f1332f23d568d79f6fb3ac2566c4cf6dd
     "movie-trailer": "^3.0.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.0",

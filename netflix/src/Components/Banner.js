@@ -30,11 +30,7 @@ const Banner = () => {
   };
 
   const opts = {
-<<<<<<< HEAD
-    height: "200vh",
-=======
     height: "200",
->>>>>>> a714a31f1332f23d568d79f6fb3ac2566c4cf6dd
     width: "100%",
     playerVars: {
       autoplay: 1,
@@ -54,11 +50,6 @@ const Banner = () => {
       )
         .then((url) => {
           const urlParams = new URLSearchParams(new URL(url).search);
-<<<<<<< HEAD
-          // console.log(urlParams);
-=======
-          console.log(urlParams);
->>>>>>> a714a31f1332f23d568d79f6fb3ac2566c4cf6dd
 
           setTrailerUrl(urlParams.get("v"));
         })
@@ -79,11 +70,7 @@ const Banner = () => {
           backgroundPosition: "center",
         }}
       >
-<<<<<<< HEAD
-        <div className="YouTube">
-=======
         <div className="">
->>>>>>> a714a31f1332f23d568d79f6fb3ac2566c4cf6dd
           {trailerUrl && <YouTube videoId={trailerUrl} opts={opts} />}
         </div>
         <div className="bannerContents ms-5">

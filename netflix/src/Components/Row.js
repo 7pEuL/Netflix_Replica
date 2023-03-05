@@ -19,11 +19,8 @@ const Row = ({ title, fetchUrl, isLargeRow }) => {
     const fetchData = async () => {
       // const request = await axios.get(`http://localhost:2023/api/${fetchUrl}`);
       const request = await axios.get(`${fetchUrl}`);
-<<<<<<< HEAD
       // console.table(request);
-=======
-      console.log(request);
->>>>>>> a714a31f1332f23d568d79f6fb3ac2566c4cf6dd
+      // console.log(request);
 
       setMovies(request.data.results);
       return request;
@@ -92,11 +89,7 @@ const Row = ({ title, fetchUrl, isLargeRow }) => {
       <h2 className=" row__title ms-3">{title}</h2>
       <div className="rowPosters auto__scroll row__wrapper">
         {movies?.map((movie) => (
-<<<<<<< HEAD
           <React.Fragment key={movie.id}>
-=======
-          <>
->>>>>>> a714a31f1332f23d568d79f6fb3ac2566c4cf6dd
             {/* <span
               onClick={() => handleSlide("left")}
               className="row__wrapperLeft  row__sliderArrow"
@@ -104,10 +97,6 @@ const Row = ({ title, fetchUrl, isLargeRow }) => {
               <i className="bi bi-caret-left-fill"></i>
             </span> */}
             <img
-<<<<<<< HEAD
-=======
-              key={movie.id}
->>>>>>> a714a31f1332f23d568d79f6fb3ac2566c4cf6dd
               onClick={() => handleMovie(movie)}
               // onMouseEnter={() => handleMouseEnter(movie)}
               onMouseLeave={() => handleMouseEnter(false)}
@@ -123,11 +112,7 @@ const Row = ({ title, fetchUrl, isLargeRow }) => {
             >
               <i className="bi bi-caret-right-fill"></i>
             </span> */}
-<<<<<<< HEAD
           </React.Fragment>
-=======
-          </>
->>>>>>> a714a31f1332f23d568d79f6fb3ac2566c4cf6dd
         ))}
       </div>
 
